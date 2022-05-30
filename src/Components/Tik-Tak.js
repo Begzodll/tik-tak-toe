@@ -110,9 +110,9 @@ const TikTak = () => {
                 </button>
                         <button onClick={() => handleRestart()} className={'bg-slate-700 rounded px-5'}>Play Again
                         </button>
-                    </>
+                    {/*</>*/}
                 )}
-            {/*</div>*/}
+            </div>
         </div>
     )
 }
