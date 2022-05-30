@@ -5,8 +5,11 @@ const TikTak = () => {
     const [cells, setCells] = useState(Array(9).fill(''));
     const [winner, setWinner] = useState();
 
+<<<<<<< HEAD
     console.log(winner)
 
+=======
+>>>>>>> 96521ee8ea1fa4e1be180a3ebe42c0e46f695c59
     const checkForWinner = (squares) => {
         let combos = {
             across: [
@@ -67,7 +70,11 @@ const TikTak = () => {
 
     const Cell = ({num}) => {
         return <td onClick={() => handleClick(num)}
+<<<<<<< HEAD
                    className={`border text-center truncate border-slate-400 w-28 h-28 text-lg`}>{cells[num]}</td>;
+=======
+                   className={'border text-center truncate border-slate-400 w-28 h-28 text-lg '}>{cells[num]}</td>;
+>>>>>>> 96521ee8ea1fa4e1be180a3ebe42c0e46f695c59
     };
 
     return (
@@ -106,10 +113,17 @@ const TikTak = () => {
                     <>
                         <p className={'mx-5 text-center'}><span
                             className={'text-3xl text-green-500 text-center'}>{winner}</span> is the winner!</p>
+<<<<<<< HEAD
                     </>
                 )}
                 <button onClick={() => handleRestart()} className={'bg-slate-700 rounded px-5'}>Play Again
                 </button>
+=======
+                        <button onClick={() => handleRestart()} className={'bg-slate-700 rounded px-5'}>Play Again
+                        </button>
+                    </>
+                )}
+>>>>>>> 96521ee8ea1fa4e1be180a3ebe42c0e46f695c59
             </div>
         </div>
     )
